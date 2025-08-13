@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 
-@EnableFeignClients(basePackages = "com.hmall.api.client",defaultConfiguration = DefaultFeignConfig.class)
+@EnableFeignClients(basePackages = "com.hmall.api.client"/*,defaultConfiguration = DefaultFeignConfig.class需要日志输出就添上*/)
 @MapperScan("com.hmall.cart.mapper")
 @SpringBootApplication
 public class CartApplication {
